@@ -1,0 +1,419 @@
+body,
+html {
+    width: 100%;
+	height: 100%;
+}
+
+body, p {
+	color: #555; 
+	font: 400 1rem/1.625rem "Open Sans", sans-serif;;
+}
+
+.p-large {
+	font: 400 1.125rem/1.75rem "Open Sans", sans-serif;
+}
+
+.p-small {
+	font: 400 0.875rem/1.5rem "Open Sans", sans-serif;
+}
+
+h1 {
+	color: #333;
+	font: 700 2.5rem/3.125rem "Open Sans", sans-serif;
+	letter-spacing: -0.2px;
+}
+
+h2 {
+	color: #333;
+	font: 700 2rem/2.625rem "Open Sans", sans-serif;
+	letter-spacing: -0.2px;
+}
+
+h3 {
+	color: #333;
+	font: 700 1.625rem/2.125rem "Open Sans", sans-serif;
+	letter-spacing: -0.2px;
+}
+
+h4 {
+	color: #333;
+	font: 700 1.375rem/1.75rem "Open Sans", sans-serif;
+	letter-spacing: -0.1px;
+}
+
+h5 {
+	color: #333;
+	font: 700 1.125rem/1.5rem "Open Sans", sans-serif;
+	letter-spacing: -0.1px;
+}
+
+h6 {
+	color: #333;
+	font: 700 1rem/1.375rem "Open Sans", sans-serif;
+	letter-spacing: -0.1px;
+}
+
+/***********Spinner**************/
+.spinner-wrapper {
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #fff;
+}
+
+.spinner {
+	position: absolute;
+	top: 50%; /* centers the loading animation vertically one the screen */
+	left: 50%; /* centers the loading animation horizontally one the screen */
+	width: 3.75rem;
+	height: 1.25rem;
+	margin: -0.625rem 0 0 -1.875rem; /* is width and height divided by two */ 
+	text-align: center;
+}
+
+.spinner > div {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
+	background-color: #5f4dee;
+	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+	-webkit-animation-delay: -0.32s;
+	animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+	-webkit-animation-delay: -0.16s;
+	animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+	0%, 80%, 100% { -webkit-transform: scale(0); }
+	40% { -webkit-transform: scale(1.0); }
+}
+
+@keyframes sk-bouncedelay {
+	0%, 80%, 100% { 
+		-webkit-transform: scale(0);
+		-ms-transform: scale(0);
+		transform: scale(0);
+	} 40% { 
+		-webkit-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+	}
+}
+
+
+/**************************/
+/*     03. Navigation     */
+/**************************/
+.navbar-custom {
+	background-color: #5f4dee;
+	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+	font: 700 0.875rem/0.875rem "Open Sans", sans-serif;
+	transition: all 0.2s;
+}
+
+.navbar-custom .container {
+	max-width: 87.5rem;
+}
+
+.navbar-custom .navbar-brand.logo-image img {
+    width: 4.4375rem;
+	height: 1.75rem;
+}
+
+.navbar-custom .navbar-brand.logo-text {
+	font: 700 2rem/1.5rem "Open Sans", sans-serif;
+	color: #fff;;
+	text-decoration: none;
+}
+
+.navbar-custom .navbar-nav {
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.navbar-custom .nav-item .nav-link {
+	padding: 0.625rem 0.75rem 0.625rem 0.75rem;
+	color: #f7f5f5;
+	opacity: 0.8;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.navbar-custom .nav-item .nav-link:hover,
+.navbar-custom .nav-item .nav-link.active {
+	color: #fff;
+	opacity: 1;
+}
+
+
+.navbar-custom .nav-item .btn-outline-sm {
+	margin-top: 0.25rem;
+	margin-bottom: 1.375rem;
+	margin-left: 0.5rem;
+	border: 0.125rem solid #fff;
+	color: #fff;
+}
+
+.navbar-custom .nav-item .btn-outline-sm:hover {
+	background-color: #fff;
+	color: #5f4dee;
+}
+
+.navbar-custom .navbar-toggler {
+	padding: 0;
+	border: none;
+	color: #fff;
+	font-size: 2rem;
+}
+
+.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-times{
+	display: none;
+}
+
+.navbar-custom button[aria-expanded='false'] .navbar-toggler-awesome.fas.fa-bars{
+	display: inline-block;
+}
+
+.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-bars{
+	display: none;
+}
+
+.navbar-custom button[aria-expanded='true'] .navbar-toggler-awesome.fas.fa-times{
+	display: inline-block;
+	margin-right: 0.125rem;
+}
+
+/* 
+---------------------------------------------
+Banner Style
+--------------------------------------------- 
+*/
+
+#section-1 {
+    margin-top: 0px;
+    height: 100vh;
+    min-height: 700px;
+    color: #fff;
+    background-color: #222;
+    position: relative;
+  }
+  #section-1 .content-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  #section-1 .content-slider input {
+    display: none;
+  }
+  #section-1 .content-slider .slider {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+  }
+  #section-1 .content-slider .slider .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: all 0.5s ease;
+  }
+  #section-1 .more-info {
+    margin-top: 60px;
+    background-color: #fff;
+    padding: 30px 60px;
+    border-radius: 61px;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    bottom: 130px;
+    display: inline-block;
+  }
+  #section-1 .more-info i {
+    color: #22b3c1;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    line-height: 58px;
+    border: 1px solid #22b3c1;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  #section-1 .more-info h4 {
+    text-align: left;
+    font-size: 20px;
+    color: #22b3c1;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  #section-1 .more-info h4 span {
+    font-size: 15px;
+    color: #afafaf;
+    font-weight: 400;
+  }
+  #section-1 .main-button {
+    margin-top: 8px;
+    text-align: right;
+  }
+  #section-1 .main-button a:hover {
+    background-color: #22b3c1;
+    border-color: #22b3c1;
+    color: #fff;
+    opacity: 0.8;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper {
+    height: 100%;
+    box-sizing: border-box;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper .main-caption {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  #section-1 .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a:hover {
+    color: #22b3c1;
+    border-color: #22b3c1;
+    transition: 0.3s;
+  }
+  #section-1 .content-slider .slider #top-banner-1 {
+    background: url('../images/Inagurate.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  #section-1 .content-slider .slider #top-banner-2 {
+    background: url('../images/Dance.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  #section-1 .content-slider .slider #top-banner-3 {
+    background: url('../images/Group_pic.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  #section-1 .content-slider .slider #top-banner-4 {
+    background: url('../images/MinisterSpeech.jpg') no-repeat center center;
+    background-size: cover;
+  }
+  #section-1 .content-slider nav {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
+  }
+  #section-1 .content-slider nav .controls {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+  }
+  #section-1 .content-slider nav .controls label {
+    position: relative;
+    display: inline-block;
+    width: 19.5%;
+    height: 3.1em;
+    overflow: hidden;
+    margin: 0 1em;
+    padding-top: 1em;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-size: 1em;
+    color: #f6eac5;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  #section-1 .content-slider nav .controls label .progressbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #f6eac5;
+    z-index: 100;
+  }
+  #section-1 .content-slider nav .controls label .progressbar .progressbar-fill {
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    margin-left: -100%;
+    background: #22b3c1;
+  }
+  #section-1 .content-slider nav .controls label span.text {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+  #section-1 .content-slider nav .controls label:hover {
+    color: #22b3c1;
+  }
+  #section-1 .content-slider #banner1:checked ~ .slider #top-banner-1,
+  #section-1 .content-slider #banner2:checked ~ .slider #top-banner-2,
+  #section-1 .content-slider #banner3:checked ~ .slider #top-banner-3,
+  #section-1 .content-slider #banner4:checked ~ .slider #top-banner-4 {
+    opacity: 1;
+    z-index: 1;
+  }
+  #section-1 .content-slider #banner1:checked ~ nav label:nth-of-type(1),
+  #section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2),
+  #section-1 .content-slider #banner3:checked ~ nav label:nth-of-type(3),
+  #section-1 .content-slider #banner4:checked ~ nav label:nth-of-type(4) {
+    cursor: default;
+    color: #fff;
+    transition: all 0.5s;
+  }
+  #section-1 .content-slider #banner1:checked ~ nav label:nth-of-type(1) .progressbar,
+  #section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2) .progressbar,
+  #section-1 .content-slider #banner3:checked ~ nav label:nth-of-type(3) .progressbar,
+  #section-1 .content-slider #banner4:checked ~ nav label:nth-of-type(4) .progressbar {
+    background: #fff;
+  }
+  #section-1 .content-slider #banner1:checked ~ nav label:nth-of-type(1) .progressbar-fill,
+  #section-1 .content-slider #banner2:checked ~ nav label:nth-of-type(2) .progressbar-fill,
+  #section-1 .content-slider #banner3:checked ~ nav label:nth-of-type(3) .progressbar-fill,
+  #section-1 .content-slider #banner4:checked ~ nav label:nth-of-type(4) .progressbar-fill {
+    animation: progressBarFill 5s linear;
+  }
+  /* Animations */
+  @keyframes progressBarFill {
+    from {
+      margin-left: -100%;
+    }
+    to {
+      margin-left: 0;
+    }
+  }
+  
